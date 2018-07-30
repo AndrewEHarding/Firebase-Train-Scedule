@@ -1,3 +1,15 @@
+body {
+    background-image: url(../images/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+.container {
+    max-width: 900px;
+    opacity: .90;
+}
+
 .card-header {
     background-color: cornflowerblue;
     color: white;
@@ -5,6 +17,16 @@
 
 .table th {
     border-top: 0;
+    font-weight: bold;
+    font-size: 110%;
+}
+
+#schedule {
+    margin-bottom: 25px;
+}
+
+th, td {
+    text-align: center;
 }
 
 .card {
