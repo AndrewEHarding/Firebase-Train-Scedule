@@ -41,7 +41,8 @@ $(document).ready(function () {
         if (!name || !destination || !time || !frequency) {
             alert("All fields are required.");
         }
-        else if (time.length != 4) {
+        //Check for 24 hour format
+        else if (time.length != 4 || parseInt(time) > 2400) {
             alert("First Arrival Time must be in 24 hour format.\nExample: 1330 (for 1:30 pm)");
         }
         else {
@@ -95,6 +96,5 @@ $(document).ready(function () {
         //Fill <tbody>
         $("tbody").append(row);
     });
-
 
 });//end of .ready function
